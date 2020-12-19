@@ -1,0 +1,142 @@
+<!--HTML by Michael Egharevba for image gallery web page-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Image Gallery </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Here is the code to add a favicon which I learned from this youtube video. @reference https://www.youtube.com/watch?v=kEf1xSwX5D8 -->
+		<link rel="shortcut icon" type="image/png" href="images-home-gallery/favicon-home-gallery.png">
+		
+		<!--Links to Bootstrap's custom css-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		
+		<!--Links to Bootstrap's custom JavaScript-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		
+		<!--Links to the 'Open Sans' Google font-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		
+		<!--Here I link to my own css-->
+		<link rel="stylesheet" href="styles-imagegallery.css">
+		
+		<!--Here I link to my own external JavaScript file-->
+		<script src="external-imagegallery.js"></script>
+		
+		<!-- Here is the code to add a favicon which I learned from this youtube video. @reference https://www.youtube.com/watch?v=kEf1xSwX5D8 -->
+		<link rel="shortcut icon" type="image/png" href="images-home-gallery/favicon-home-gallery.png">
+	</head>
+	<body>
+		<!--Below I have a container with 1 row and 3 columns of equal size. With bootstrap there can be a total of 12 columns so I made 3 by dividing 12 by 3 and using the answer "4" in the "col" class-->
+		<div class="container-fluid" id="Header">
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<img src="images-home-gallery/logo-home-gallery.png" alt="The D Licious Logo" class="headerlogo">
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+		
+		<!--Below is the code for bootstrap's custom navbar which I made some changes to-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><b>D LICIOUS</b></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="menu.html">Menu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="imagegallery.html">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="game.html">Game</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+		<!--Here I added a new container with rows that have 4 equal sized columns. I did this by dividing 12 by 4 and using the answer "3" in the col class. I also added an id and an onclick value to all the images so that my external JS file can work with them-->
+		<div class="container-2">
+			<div class="row first">
+				<div class="col-md-3">
+					<img src="images-home-gallery/oconnell.jpg" alt="O'Connell Street where our main restaurant is located" class="pic" id="oconnell" onclick="change();">
+					<!--Image is from this link https://www.irishtimes.com/life-and-style/homes-and-property/interiors/rising-from-the-dust-the-reconstruction-of-o-connell-street-1.2584775-->
+					<p id="text">Our main restaurant is located<br>in Upper O'Connell Street</p>
+				</div>
+				<div class="col-md-3">
+					<img src="images-home-gallery/view.jpg" alt="Restaurant view from up high" class="pic" id="view" onclick="changea();">
+					<p>A lot of our locations have<br>fascinating views that you can reserve</p>
+					<!--Image is from this link https://www.knockrannyhousehotel.ie/dining-->
+				</div>
+				<div class="col-md-3">
+					<img src="images-home-gallery/night.jpg" alt="Restaurant at night" class="pic" id="night" onclick="changeb();">
+					<p>All our restaurants are opened 24/7 so you<br>can always stop by here if you enjoy night life</p>
+					<!--Image is from this link https://livejapan.com/en/article-a0001540/-->	
+				</div>
+				<div class="col-md-3">
+					<img src="images-home-gallery/private.jpg" alt="Private dining room" class="pic" id="private" onclick="changec();">
+					<p>You can book a private dining where only your friends and family are in the room. Contact us <a href="contact.html" class="contact">here</a></p>
+					<!--Image is from this link https://www.knockrannyhousehotel.ie/photos-videos-->
+				</div>
+			</div>
+			<div class="row second">
+				<div class="col-md-3">
+					<img src="images-home-gallery/chicken.jpg" alt="A dish with chicken" class="pic" id="chicken" onclick="changed();">
+					<p>We have a wide variety of dishes</p>
+					<!--Image is from this link https://www.facebook.com/pg/5-Star-Foods-Restaurants-1535737553412518/photos/-->
+				</div>
+				<div class="col-md-3">
+					<img src="images-home-gallery/vegan.jpg" alt="Vegan dish" class="pic" id="vegan" onclick="changee();">
+					<p>Our restaurant is perfect for vegans as we have a wide range of vegan food</p>
+					<!--Image is from this link https://tasty.co/recipe/the-best-ever-vegan-burger-->
+				</div>
+				<div class="col-md-3">
+					<img src="images-home-gallery/ingredients.jpg" alt="Ingrediants" class="pic" id="ingredients" onclick="changef();">
+					<p>We are always open to making new<br>recipes so contact us <a href="contact.html" class="contact">here</a> to give us ideas</p>
+					<!--Image is from this link https://blog.hellofresh.co.uk/indian-cooking/-->
+				</div>
+				<div class="col-md-3">
+					<img src="images-home-gallery/nyc.jpg" alt="New York City" class="pic" id="nyc" onclick="changeg();">
+					<p>By 2021 we plan to go international and build restaurants in New York, LA, Dubai and more places</p>
+					<!--Image is from this link https://www.getyourguide.com/discovery/new-york-city-l59/?utm_force=0-->
+				</div>
+			</div>
+		</div>
+		<br />
+		
+		<!--container set-up for footer-->
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="images-menu/logo-menu.png" alt="The D Licious Logo" class="footerlogo">
+					</div>
+					<div class="col-md-4">
+						<p class="copyright">Copyright &#169; 2020 D Licious, Ltd.</p>
+					</div>
+					<div class="col-md-4">
+						<p class="address">
+						42 Hogan Street,<br />
+						Dublin 2, <br />
+						Ireland. <br />
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

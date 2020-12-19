@@ -1,0 +1,131 @@
+/*CSS by Aaron Kearns for menu web page*/
+
+#Header {
+	position: fixed;
+	z-index: 1;
+	background: #ffd700;
+}
+.headerlogo {
+	display: block;
+	margin-left: 35%;
+	margin-right: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.navbar {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	margin-top: 120px;
+	background-color: white !important;
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar-brand{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+}
+.nav-link {
+	margin-left: 80px;
+	margin-right: 130px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: black !important;
+}
+.nav-link:hover{
+	/*The code below changes the colour and the weigth of the font when I hover over the listed items apart from the listed item that has the "active" class which already has these properties*/
+	color: #d1011b!important;
+	font-weight: bold;
+}
+
+body {
+	background-color: #ffd700;
+}
+
+/*This was used as a temporary border around rows and columns. It allowed me to see where content was located within columns and rows.*/ 
+/*#temp {
+	border: 2px;
+	border-style: solid;
+	border-color: #d1011b;
+}*/
+
+.our-menu {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.menu-sec {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+}
+/*css for <hr> tags in menu*/
+.hr-menu-sec {
+	border-top: 5px solid;
+}
+
+.filter {
+	text-align: center;
+	margin-top: 16px;
+}
+
+.button {
+	background-image: url('images-menu/vegansymbol.jpg'); 
+	background-size: cover;
+	width: 61px; 
+	height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button2 { 
+	background-color: white;
+	background-size: cover;
+	width: 100px;
+	height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#all-starters {
+	font-family: 'Open Sans', sans-serif;
+}
+#all-mains {
+	font-family: 'Open Sans', sans-serif;
+}
+#all-sides {
+	font-family: 'Open Sans', sans-serif;
+}
+#all-desserts {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.pic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border: 10px solid white;
+}
+
+footer {
+	background-color: white;
+	min-height: 120px;
+    text-align: center;
+}
+
+.footerlogo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.copyright {
+	margin-top: 60px;
+}
+
+.address {
+	margin-top: 40px;
+	margin-left: 140px;
+	text-align: left;
+}

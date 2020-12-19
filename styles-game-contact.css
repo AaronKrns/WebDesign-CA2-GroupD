@@ -1,0 +1,94 @@
+/*CSS by Moyosore Alao for game and contact web page*/
+
+#Header {
+	background: #ffd700;
+}
+
+.headerlogo {
+	display: block;
+	margin-left: 35%;
+	margin-right: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.navbar {
+	width: 100%;
+	background-color: white !important;
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar-brand{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+}
+.nav-link {
+	margin-left: 80px !important;
+	margin-right: 130px !important;
+	color: black !important;
+}
+.nav-link:hover{
+	/*The code below changes the colour and the weigth of the font when I hover over the listed items apart from the listed item that has the "active" class which already has these properties*/
+	color: #d1011b!important;
+	font-weight: bold;
+}
+
+body {
+	background-color: #ffd700;
+}
+
+.game-postion {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*padding*/
+.fa{
+	 padding: 20px;
+	 font-size: 30px;
+	 width: 50px;
+	 text-align: center;
+	 text-decoration: none;
+	 border-radius: 50%;
+}
+/*hover effect*/
+.fa:hover{
+	 opacity: 0.7;
+}
+.fa-facebook{
+	 background: #3B5998;
+	 color: white;
+}
+.fa-twitter{
+	 background: #55ACEE;
+	 color: white;
+}
+.fa-instagram{
+	 background: #125688;
+	 color: white;
+}
+
+.p{
+	 font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+	background-color: white;
+	min-height: 120px;
+    text-align: center;
+}
+
+.footerlogo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.copyright {
+	margin-top: 60px;
+}
+
+.address {
+	margin-top: 40px;
+	margin-left: 140px;
+	text-align: left;
+}

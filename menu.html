@@ -1,0 +1,438 @@
+<!--HTML by Aaron Kearns for menu web page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>D Licious</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--Links to Bootstrap's custom css-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		
+		<!--Links to Bootstrap's custom JavaScript-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="styles-menu.css">
+		
+		<!--reference: https://fonts.google.com/specimen/Open+Sans?query=Open&sidebar.open=true&selection.family=Open+Sans-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		
+		<!--favicon-->
+		<link rel="shortcut icon" type="image/png" href="images-menu/favicon-menu.png">
+		
+		<script src="external-menu.js"></script>
+	</head>
+	
+	<body>
+		<!--container set up for header-->
+		<div class="container-fluid" id="Header">
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<img src="images-menu/logo-menu.png" alt="The D Licious Logo" class="headerlogo">
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+		
+		<!--reference: https://getbootstrap.com/docs/5.0/components/navbar/-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><b>D LICIOUS</b></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="menu.html">Menu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="imagegallery.html">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="game.html">Game</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div class="our-menu">
+			<h2>Our Menu</h2>
+		</div>
+		<br />
+		
+		<br />
+		<br />
+		<!--container set up for menu section and filter-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+						<!--<hr> for visual division of each menu section-->
+						<hr class="hr-menu-sec">
+						<h4 class="menu-sec">Starters</h4>		
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<!--filter and buttons are each placed in a column of 1 so they can be in close proximety and remain inline as the page size decreases-->
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+					<h6 class="filter">Filter:</h6>
+				</div>
+				<div class="col-md-1">
+					<!--button which returns the value 'true' to the function 'veganMenuFilter' and hides elements with an id 'non-vegan-starters'-->
+					<input type="button" onclick="return veganMenuFilter('non-vegan-starters')" class="button">
+				</div>
+				<div class="col-md-1">
+					<!--button which returns the value 'true' to the function 'menuSectionFilter' and hides elements with an id 'all-starters'-->
+					<input type="button" onclick="return menuSectionFilter('all-starters')" class="button2" value="Hide section">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+		</div>
+		<br />
+		<!--a container for the content of the menu section allows all of the content under the section can be in the id which hides/unhides the menu section-->
+		<div class="container-fluid" id="all-starters">
+			<!--an individual row for vegan items in each menu section sererates the vegan items from the non-vegan items. This allows for only the non-vegan items to be in the id which hides/unhides non-vegan items-->
+			<div class="row">
+				<div class="col-md-6">
+					<p>
+					Vegan Garlic Bread with Mozzarella..............................................................€4.95<br />Crunchy ciabatta bread covered in vegan garlic butter and vegan mozzarella<br />
+					</p>
+					<br />
+					<p>
+					Vegan Homemade Hummus............................................................................€4.50<br />Served with carrots, cucumber and vegan naan bread
+					</p>
+				</div>
+				<div class="col-md-6" id="non-vegan-starters">
+					<p>
+					Grilled Sriracha Prawns.......................................................................................€5.95<br />Served with noodles and soy sauce
+					</p>
+					<p>
+					Chickpea and Beetroot Salad...........................................................................€3.95<br />With a lemon and mint dressing
+					</p>
+					<p>
+					Buffalo Chicken Wings........................................................................................€5.50<br />Served with a chilli dip and celery
+					</p>
+				</div>
+			</div>
+		</div>
+		<br />	
+		<br />
+		<!--container set up for menu section and filter-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+						<!--<hr> for visual division of each menu section-->
+						<hr class="hr-menu-sec">
+						<h4 class="menu-sec">Main Courses</h4>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<!--filter and buttons are each placed in a column of 1 so they can be in close proximety and remain inline as the page size decreases-->
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+					<h6 class="filter">Filter:</h6>
+				</div>
+				<div class="col-md-1">
+					<!--button which returns the value 'true' to the function 'veganMenuFilter' and hides elements with an id 'non-vegan-mains'-->
+					<input type="button" onclick="return veganMenuFilter('non-vegan-mains')" class="button">
+				</div>
+				<div class="col-md-1">
+					<!--button which returns the value 'true' to the function 'menuSectionFilter' and hides elements with an id 'all-mains'-->
+					<input type="button" onclick="return menuSectionFilter('all-mains')" class="button2" value="Hide section">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+		</div>
+		<br />	
+		<div class="container-fluid" id="all-mains">
+			<div class="row">
+				<div class="col-md-6">
+					<p>
+					The D Licious Vegan Burger....................................................................................................€13.95<br />Sweet potato and chickpea burger with chilli flakes, lettuce and tomato
+					</p>
+					<br />
+					<p>
+					The D Licious Vegan Pizza Giardiniera................................................................................€14.50<br />Red onions, olives, spinach, tomato, garlic oil and vegan mozzarella
+					</p>
+					<br />
+					<p>
+					Thai Curry.......................................................................................................................................€13.50<br />Vegan curry paste with ginger, mangetout, red pepper and Quorn
+					</p>
+					<br />
+					<p>
+					Tofu Katsu Curry...........................................................................................................................€13.95<br />Vegan Japanese curry made with tofu with breadcrumbs, carrot, ginger and honey sauce
+					</p>
+				</div>
+				<div class="col-md-6" id="non-vegan-mains">
+					<p>
+					The D Licious Pizza Margherita............................................................................................€12.50<br />Mozzarella and tomato
+					</p>
+					<br />
+					<p>
+					The D Licious Pizza Piccante..................................................................................................€13.95<br />Spicy minced meat, chilli, tomato sauce and mozzarella cheese topped with an egg
+					</p>
+					<br />
+					<p>
+					The D Licious Pizza Fiorentina................................................................................................€13.95<br />Balsamic vinegar, spinach, soft boiled egg, mozzarella, tomato, garlic oil and black olives
+					</p>
+					<br />
+					<p>
+					Mediterrainian Shrimp Kabobs.............................................................................................€14.50<br />Grilled shrimp kabobs,  in a Mediterranean marinade with garlic and herbs
+					</p>
+					<br />
+					<p>
+					Cajun Marinated Breast of Chicken.....................................................................................€14.95<br />Served with Pilaf rice in a creamy Cajun sauce sided with mixed vegetables
+					</p>
+					<br />
+					<p>
+					10oz Sirloin Steak........................................................................................................................€14.95<br />Portobello mushrooms, caramelised onion and sided with sweet potato fries
+					</p>
+					<br />
+					<p>
+					The D Licious Hamburger.........................................................................................................€12.95<br />With grilled pineapple, lettuce, cheddar cheese and tomato
+					</p>
+					<br />
+					<p>
+					The D Licious Chicken Burger.................................................................................................€13.95<br />With gurken, lettuce and tomato
+					</p>
+				</div>
+			</div>
+		</div>
+		<br />	
+		<br />
+		<!--container set up for menu section and filter-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+						<!--<hr> for visual division of each menu section-->
+						<hr class="hr-menu-sec">
+						<h4 class="menu-sec">Sides</h4>
+				</div>
+			</div>
+			<div class="row">
+				<!--filter and buttons are each placed in a column of 1 so they can be in close proximety and remain inline as the page size decreases-->
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+					<h6 class="filter">Filter:</h6>
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+					<!--button which returns the value 'true' to the function 'menuSectionFilter' and hides elements with an id 'all-sides'-->
+					<input type="button" onclick="return menuSectionFilter('all-sides')" class="button2" value="Hide section">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="container-fluid" id="all-sides">
+			<div class="row">
+				<div class="col-md-6">
+					<p>
+					Mixed Vegtables................................................................€4.50<br />Includes carrots, green beans and broccoli
+					</p>
+					<br />
+					<p>
+					Sweet Potato Fries............................................................€4.50
+					</p>
+				</div>
+				<div class="col-md-6">
+					<p>
+					Side Salad............................................................................€3.50
+					</p>
+					<br />
+					<p>
+					French Fries.........................................................................€4.00
+					</p>
+				</div>
+			</div>
+		</div>
+		<br />	
+		<br />
+		<!--container set up for menu section and filter-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+						<!--<hr> for visual division of each menu section-->
+						<hr class="hr-menu-sec">
+						<h4 class="menu-sec">Desserts</h4>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<!--filter and buttons are each placed in a column of 1 so they can be in close proximety and remain inline as the page size decreases-->
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+					<h6 class="filter">Filter:</h6>
+				</div>
+				<div class="col-md-1">
+					<!--button which returns the value 'true' to the function 'veganMenuFilter' and hides elements with an id 'non-vegan-desserts'-->
+					<input type="button" onclick="return veganMenuFilter('non-vegan-desserts')" class="button">
+				</div>
+				<div class="col-md-1">
+					<!--button which returns the value 'true' to the function 'menuSectionFilter' and hides elements with an id 'all-desserts'-->
+					<input type="button" onclick="return menuSectionFilter('all-desserts')" class="button2" value="Hide section">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="container-fluid" id="all-desserts">
+			<div class="row">
+				<div class="col-md-6">
+					<p>
+					Vegan Coconut Cake.......................................................................€6.50<br />With a ginger cream cheese filling and sided with vegan ice-cream
+					</p>
+				</div>
+				<div class="col-md-6" id="non-vegan-desserts">
+					<p>
+					Black Forest Gateau........................................................................................................€6.00<br />Chocolate sponge cake with chocalate mousse and vanilla cream and red cherries
+					</p>
+					<br />
+					<p>
+					Eton Mess...........................................................................................................................€5.50<br />Meringue, strawberries and fresh cream
+					</p>
+					<br />
+					<p>
+					Apple Crumble.................................................................................................................€6.00<br />Served with fresh cream and custard
+					</p>
+					<br />
+					<p>
+					Selection of Ice Creams................................................................................................€4.00<br />Vanilla, chocalate, strawberry or mint
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<!--<hr> for visual division of each menu section-->
+					<hr class="hr-menu-sec">
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-md-4">
+					<!--https://thecookingjar.com/sriracha-shrimp-skewers/-->
+					<img src="images-menu/prawns.jpg" alt="Grilled Sriracha Prawns" class="pic">
+				</div>
+				<div class="col-md-4">
+					<!--https://cookidoo.co.uk/recipes/recipe/en-GB/r121147-->
+					<img src="images-menu/veganburger.jpg" alt="The D Licious Vegan Burger" class="pic">
+				</div>
+				<div class="col-md-4">
+					<!--https://www.gourmettraveller.com.au/recipes/browse-all/eton-mess-8790-->
+					<img src="images-menu/etonmess.jpg" alt="Eton Mess" class="pic">
+				</div>
+			</div>
+		</div>
+		<br />
+		<br />
+		<footer>
+			<!--container set-up for footer-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="images-menu/logo-menu.png" alt="The D Licious Logo" class="footerlogo">
+					</div>
+					<div class="col-md-4">
+						<p class="copyright">Copyright &#169; 2020 D Licious, Ltd.</p>
+					</div>
+					<div class="col-md-4">
+						<p class="address">
+						42 Hogan Street,<br />
+						Dublin 2, <br />
+						Ireland. <br />
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

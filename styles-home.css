@@ -1,0 +1,111 @@
+/*CSS by Michael Egharevba for landing web page*/
+
+#Header {
+	position: fixed;
+	z-index: 1;
+	background: #ffd700;
+}
+
+.headerlogo {
+	display: block;
+	margin-left: 35%;
+	margin-right: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.navbar {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	margin-top: 120px;
+	background-color: white !important;
+	font-family: 'Open Sans', sans-serif;
+	/*not working*/
+	font-style: bold !important;
+}
+.navbar-brand{
+	/*Here I changed the font to one of html's deafault fonts 'Times New Roman'*/
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+}
+.nav-link {
+	margin-left: 50px;
+	margin-right: 100px;
+	/*not working*/
+	font-style: bold !important;
+	/* Here I changed the colours of the links in the navbar for the other pages to black*/
+	color: black!important;
+}
+.nav-link:hover{
+	/*The code below changes the colour and the weigth of the font when I hover over the listed items apart from the listed item that has the "active" class which already has these properties*/
+	color: #d1011b!important;
+	font-weight: bold;
+}
+
+body {
+	background-color: #ffd700;
+}
+
+li{
+	/*Here I added padding to make the space between the listed items larger and I also made the font-size of the listed items a bit bigger. @reference https://www.w3schools.com/css/css_padding.asp*/
+	padding-right: 30px;
+	padding-left: 30px;
+	font-size: 17.5px;
+}
+
+.another{
+	/*Here I center h1 and make the font-size bigger and also make it one of html's custom fonts "Times New Roman". I also pushed h1 slightly down away from the container so it doesn't clash with my border that I'm going to make*/
+	text-align: center;
+	font-size: 50px;
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 15px;
+}
+
+.row{
+	/*For some reason the page was expanding by itself and there was a scrolling bar at the bottom of the page which just lead to empty space when I moved it so I figured out myself that setting the width to 100% gets rid of this problem*/
+	width: 100%;
+}
+
+.description{
+	/*Here I minimize the length of the paragraph, I center it in the column and I align the text in the center. Note: margin: 0 auto; is different from text-align: center;*/
+	text-align: center;
+	width: 45%;
+	margin: 0 auto;
+}
+
+#burger{
+	/* I learned from the following link that if you want "margin: 0 auto;" to work on an image you have to set the display to block first. @reference https://stackoverflow.com/questions/26477480/css-margin-0-auto-is-not-working-on-img-tag/26477488#:~:text=You%20must%20use%20display%3A%20block,0px%20auto%20have%20any%20effect.&text=Img%20is%20an%20inline%20element,consider%20stop%20using%20inline%20styles. I also seperated the picture from the border by using the 'margin-bottom' property*/
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.container-2{
+	/*Here I made changes to the size  and position of the second container and I also added a border to it*/
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 25px;
+	border: 3px solid black;
+}
+
+footer {
+	background-color: white;
+	min-height: 120px;
+    text-align: center;
+}
+
+.footerlogo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.copyright {
+	margin-top: 60px;
+}
+
+.address {
+	margin-top: 40px;
+	margin-left: 140px;
+	text-align: left;
+}

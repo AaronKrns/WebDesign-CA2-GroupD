@@ -1,0 +1,134 @@
+/*CSS by Michael Egharevba for image gallery web page*/
+
+#Header {
+	background: #ffd700;
+}
+
+.headerlogo {
+	display: block;
+	margin-left: 35%;
+	margin-right: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.navbar {
+	width: 100%;
+	background-color: white !important;
+	font-family: 'Open Sans', sans-serif;
+	/*not working*/
+	font-style: bold !important;
+}
+.navbar-brand{
+	/*Here I changed the font to one of html's deafault fonts 'Times New Roman'*/
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+}
+.nav-link {
+	margin-left: 50px;
+	margin-right: 100px;
+	/*not working*/
+	font-style: bold !important;
+	/* Here I changed the colours of the links in the navbar for the other pages to black*/
+	color: black!important;
+}
+.nav-link:hover{
+	/*The code below changes the colour and the weigth of the font when I hover over the listed items apart from the listed item that has the "active" class which already has these properties*/
+	color: #d1011b!important;
+	font-weight: bold;
+}
+
+body {
+	background-color: #ffd700;
+}
+
+li{
+	/*Here I added padding to make the space between the listed items larger and I also made the font-size of the listed items a bit bigger. I found out that you can target the padding in just one direction with this w3schools link. @ reference https://www.w3schools.com/css/css_padding.asp */
+	padding-right: 30px;
+	padding-left: 30px;
+	font-size: 17.5px;
+}
+
+.nav-link{
+	/* Here I changed the colours of the links in the navbar for the other pages to black*/
+	color: black!important;
+}
+
+.active{
+	/*This class represents the link for the page which is being displayed and I wanted to make that link a different colour to the other links in the navbar link. Because this class came after the "nav-link" class it overwrites its value for all properties with this class*/
+	color: #d1011b!important;
+	font-weight: bold;
+}
+
+.nav-link:hover{
+	/*The code below changes the colour and the weigth of the font when I hover over the listed items apart from the listed item that has the "active" class which already has these properties*/
+	color: #d1011b!important;
+	font-weight: bold;
+}
+
+.container-2{
+	/*Here I made changes to the size  and position of the second container and I also added a border to it*/
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 25px;
+	border: 3px solid black;
+	font-size: 15.5px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.pic{
+	/*I found out that for "margin: 0 auto;" to work on a picture you have to set the display to block. @ reference https://stackoverflow.com/questions/2134333/centering-an-image-within-a-div*/
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.contact{
+	/*Here I am changing the colour for one of my links in the picture description*/
+	color: #d1011b;
+}
+
+.contact:hover{
+	/*By default when you hover over the link with the above class the colour changes to blue but I wanted it to stay red so I changed the colour on hover*/
+	color: #d1011b;
+}
+
+.first{
+	margin-top: 25px;
+}
+
+.second{
+	/*I wanted there to be a little more space between the 1st and 2nd row of the second container so I used the next line of code*/
+	margin-top: 40px;
+}
+
+.row{
+	/*For some reason the page was expanding by itself and there was a scrolling bar at the bottom of the page which just lead to empty space when I moved it so I figured out myself that setting the width to 100% gets rid of this problem*/
+	width: 100%;
+}
+
+p{
+	text-align: center;
+}
+
+footer {
+	background-color: white;
+	min-height: 120px;
+    text-align: center;
+}
+
+.footerlogo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.copyright {
+	margin-top: 60px;
+}
+
+.address {
+	margin-top: 40px;
+	margin-left: 140px;
+	text-align: left;
+}

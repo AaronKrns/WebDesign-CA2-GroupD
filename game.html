@@ -1,0 +1,112 @@
+<!--HTML by Moyosore Alao for game web page-->
+
+<!DOCTYPE HTML>
+<html lang="en" >
+
+	<head>
+		<title>D Licious</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--Links to Bootstrap's custom css-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		
+		<!--Links to Bootstrap's custom JavaScript-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="styles-game-contact.css">
+		
+		<!--reference: https://fonts.google.com/specimen/Open+Sans?query=Open&sidebar.open=true&selection.family=Open+Sans-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		
+		<!--favicon-->
+		<link rel="shortcut icon" type="image/png" href="images-game-contact/favicon-game-contact.png">
+	</head>
+	 
+	<body>
+	
+		<div class="container-fluid" id="Header">
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<img src="images-game-contact/logo-game-contact.png" alt="The D Licious Logo" class="headerlogo">
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+		
+		<!--reference: https://getbootstrap.com/docs/5.0/components/navbar/-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><b>D LICIOUS</b></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="menu.html">Menu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="imagegallery.html">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="game.html">Game</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		 </nav>
+		 <br />
+		 
+		 <div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<p><b>About</b></p><br />
+					<p>Suspendisse ornare ipsum id tortor consequat, in blandit lacus pellentesque. Proin hendrerit purus orci, vitae mollis ante maximus id. Integer egestas mollis augue, condimentum venenatis justo consequat venenatis. Quisque at augue in ante consectetur laoreet non vitae ligula. Integer accumsan ultrices ex sed feugiat. Cras porttitor, ex sit amet congue ultrices, felis enim dictum ligula, at commodo felis lorem ac felis. Donec efficitur vulputate tempor. Fusce eget lorem sed orci fermentum varius nec eget ipsum. Duis vitae hendrerit metus. Donec tincidunt quam quis aliquam scelerisque. Integer consectetur nisl in elit dictum laoreet. Pellentesque vel mattis nisl. Quisque in pulvinar sem. Aliquam vitae scelerisque arcu. Vivamus pretium massa at ligula egestas elementum. Phasellus lorem nulla, commodo a varius vitae, lacinia nec ex.</p>
+				</div>		 
+				<div class="col-md-4">
+					<br /><br /><br />
+					porttitor nulla tellus, in lacinia nunc aliquam et. Morbi imperdiet justo vitae odio venenatis, sit amet porta augue tempus. Phasellus ac consequat quam. Pellentesque at ipsum eget nulla gravida tincidunt. Mauris vel metus eget tortor sodales pretium. Vivamus suscipit lobortis nunc ac tincidunt. Proin in mollis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque placerat magna et aliquam commodo.
+					<br />
+					Nunc auctor porta sem vel ullamcorper. Fusce sit amet orci luctus, varius tellus vel, pharetra magna. Sed mattis lobortis nisi, faucibus sagittis odio gravida eget. Mauris sed suscipit magna. Donec nec urna sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer et justo consectetur, faucibus mi et, feugiat purus.
+				</div>
+				<div class="col-md-4">
+					<div class="game-postion">
+						<h1 class="score">0</h1>
+						<canvas class="canvas" height="300" width="300" style="background-color:red"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br />
+		
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="images-menu/logo-menu.png" alt="The D Licious Logo" class="footerlogo">
+					</div>
+					<div class="col-md-4">
+						<p class="copyright">Copyright &#169; 2020 D Licious, Ltd.</p>
+					</div>
+					<div class="col-md-4">
+						<p class="address">
+						42 Hogan Street,<br />
+						Dublin 2, <br />
+						Ireland. <br />
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>	
+		 
+		 <script src="external-game.js"></script>
+	</body>
+</html>
